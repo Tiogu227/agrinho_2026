@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+const [selectedSolution, setSelectedSolution] = useState(solutions[0]);
+const [isAnimating, setIsAnimating] = useState(false);
+const [currentQuestion, setCurrentQuestion] = useState(0);
+const [selectedAnswer, setSelectedAnswer] = useState(null);
+const [score, setScore] = useState(0);
+
+// Seleção de soluções
+const handleSolutionClick = (solution) => {
+  if (solution.id !== selectedSolution.id) {
+    setIsAnimating(true);
+    setTimeout(() => {
+      setSelectedSolution(solution);
+      setIsAnimating(false);
+    }, 300);
+  }
+};
+
+// Quiz
+const handleAnswerSelect = (answerIndex) => {
+  if (selectedAnswer !== null) return;
+  setSelectedAnswer(answerIndex);
+  if (answerIndex === quizQuestions[currentQuestion].correctAnswer) {
+    setScore(score + 1);
+  }
+};
+
+const handleRestart = () => {
+  setCurrentQuestion(0);
+  setSelectedAnswer(null);
+  setShowResult(false);
+  setScore(0);
+};
+
+{showResult ? (
+  <ResultScreen />
+) : (
+  <QuizQuestion />
+)}
+
+{selectedAnswer !== null && (
+  <ExplanationBox />
+)}
+
+
+</body>
+</html>

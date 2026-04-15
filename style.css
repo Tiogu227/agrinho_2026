@@ -1,0 +1,22 @@
+/* Gradientes */
+bg-gradient-to-br from-green-600 to-emerald-700
+bg-gradient-to-b from-green-50 to-white
+
+/* Responsividade */
+md:text-7xl
+lg:grid-cols-3
+
+/* Animações e Transições */
+transition-all duration-300
+transform hover:scale-105
+hover:shadow-2xl
+
+/* Cores */
+text-green-600
+bg-white
+border-green-500
+
+/* Layout */
+flex flex-col md:flex-row
+grid md:grid-cols-2 lg:grid-cols-3
+container mx-auto px-4 py-20
