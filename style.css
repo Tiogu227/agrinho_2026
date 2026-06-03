@@ -30,6 +30,7 @@ button {
     font-family: inherit;
 }
 
+
 /* ===== NAVEGAÇÃO ===== */
 #navigation {
     position: fixed;
@@ -140,7 +141,8 @@ button {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-.mobile-link, .mobile-link-btn {
+.mobile-link,
+.mobile-link-btn {
     display: block;
     width: 100%;
     text-align: left;
@@ -162,6 +164,7 @@ button {
     margin-top: 8px;
     text-align: center;
 }
+
 
 /* ===== HERO SECTION ===== */
 .hero-section {
@@ -290,7 +293,8 @@ button {
     right: 0;
 }
 
-/* ===== STATISTICS SECTION ===== */
+
+/* ===== ESTATÍSTICAS ===== */
 .statistics-section {
     background: linear-gradient(135deg, #16a34a 0%, #059669 100%);
     color: white;
@@ -361,7 +365,8 @@ button {
     font-weight: 500;
 }
 
-/* ===== SOLUTIONS SECTION ===== */
+
+/* ===== SOLUÇÕES ===== */
 .solutions-section {
     background: #f9fafb;
     padding: 80px 20px;
@@ -415,16 +420,16 @@ button {
     height: 24px;
 }
 
-.bg-blue { background: #3b82f6; }
-.bg-yellow { background: #eab308; }
-.bg-green { background: #16a34a; }
+.bg-blue    { background: #3b82f6; }
+.bg-yellow  { background: #eab308; }
+.bg-green   { background: #16a34a; }
 .bg-emerald { background: #059669; }
-.bg-amber { background: #f59e0b; }
-.bg-pink { background: #ec4899; }
-.bg-red { background: #ef4444; }
-.bg-purple { background: #a855f7; }
-.bg-teal { background: #14b8a6; }
-.bg-orange { background: #f97316; }
+.bg-amber   { background: #f59e0b; }
+.bg-pink    { background: #ec4899; }
+.bg-red     { background: #ef4444; }
+.bg-purple  { background: #a855f7; }
+.bg-teal    { background: #14b8a6; }
+.bg-orange  { background: #f97316; }
 
 .solution-item h3 {
     font-size: 1.125rem;
@@ -535,7 +540,8 @@ button {
     color: #6b7280;
 }
 
-/* ===== QUIZ SECTION ===== */
+
+/* ===== QUIZ ===== */
 .quiz-section {
     background: linear-gradient(135deg, #d1fae5 0%, #dbeafe 100%);
     padding: 80px 20px;
@@ -732,7 +738,8 @@ button {
     transform: scale(1.05);
 }
 
-/* ===== RESOURCES SECTION ===== */
+
+/* ===== RECURSOS ===== */
 .resources-section {
     background: white;
     padding: 80px 20px;
@@ -898,6 +905,7 @@ button {
     cursor: not-allowed;
 }
 
+
 /* ===== FOOTER ===== */
 .footer {
     background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
@@ -1027,7 +1035,8 @@ button {
     color: #10b981;
 }
 
-/* ===== SCROLL TO TOP ===== */
+
+/* ===== BOTÃO VOLTAR AO TOPO ===== */
 .scroll-top-btn {
     position: fixed;
     bottom: 32px;
@@ -1050,6 +1059,7 @@ button {
     width: 24px;
     height: 24px;
 }
+
 
 /* ===== TOAST ===== */
 .toast {
@@ -1077,56 +1087,49 @@ button {
     }
 }
 
-.toast.success {
-    border-left: 4px solid #16a34a;
-}
+.toast.success { border-left: 4px solid #16a34a; }
+.toast.error   { border-left: 4px solid #ef4444; }
+.toast.info    { border-left: 4px solid #3b82f6; }
 
-.toast.error {
-    border-left: 4px solid #ef4444;
-}
 
-.toast.info {
-    border-left: 4px solid #3b82f6;
-}
-
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
     .desktop-menu {
         display: none;
     }
-    
+
     .mobile-toggle {
         display: block;
     }
-    
+
     .hero-container {
         flex-direction: column;
     }
-    
+
     .hero-content {
         max-width: 100%;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-description {
         font-size: 1.125rem;
     }
-    
+
     .solutions-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .section-header h2 {
         font-size: 2rem;
     }
-    
+
     #newsletter-form {
         flex-direction: column;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
@@ -1140,7 +1143,7 @@ button {
         gap: 48px;
         align-items: center;
     }
-    
+
     #newsletter-form {
         flex-direction: row;
     }
